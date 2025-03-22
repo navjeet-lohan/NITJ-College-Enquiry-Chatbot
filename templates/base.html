@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+
+
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/images/Logo_of_NIT_Jalandhar.png" alt="NIT Jalandhar Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="campus-life.html">Campus Life</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="welcome-section">
+            <h1>NITJ Welcomes You</h1>
+            <p>Dr. B R Ambedkar National Institute of Technology, Jalandhar (NIT Jalandhar) is a premier engineering institution in India, known for its excellent academic standards, cutting-edge research, and vibrant campus life.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </section>
+        
+        <section class="highlights">
+            <h2>Why Choose NIT Jalandhar?</h2>
+            <div class="highlight-cards">
+                <div class="card">
+                    <h3>Excellent Academics</h3>
+                    <p>We offer a wide range of undergraduate and postgraduate programs in engineering, technology, and sciences.</p>
+                </div>
+                <div class="card">
+                    <h3>World-Class Faculty</h3>
+                    <p>Our faculty members are experts in their fields, with extensive experience in teaching and research.</p>
+                </div>
+                <div class="card">
+                    <h3>Modern Infrastructure</h3>
+                    <p>Our campus is equipped with state-of-the-art
+                        <p>Our campus is equipped with state-of-the-art facilities and resources to support your learning and development.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- New Section: Achievements -->
+            <section class="achievements">
+                <h2>Our Achievements</h2>
+                <div class="achievement-cards">
+                    <div class="card">
+                        <h3>Top Engineering College</h3>
+                        <p>Consistently ranked among the top engineering colleges in India by national ranking agencies.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Innovative Research</h3>
+                        <p>Recognized for pioneering research in emerging technologies and interdisciplinary studies.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Successful Alumni</h3>
+                        <p>Our alumni have excelled in various fields, including technology, entrepreneurship, and academia.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- New Section: Campus Events -->
+            <section class="campus-events">
+                <h2>Upcoming Campus Events</h2>
+                <div class="event-list">
+                    <div class="event">
+                        <h3>TechFest 2024</h3>
+                        <p>Date: October 10-12, 2024</p>
+                        <p>Description: A premier technology festival showcasing innovations and competitions.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Annual Cultural Fest</h3>
+                        <p>Date: November 5-7, 2024</p>
+                        <p>Description: A vibrant celebration of art, music, and dance with participation from students and artists.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Sports Meet</h3>
+                        <p>Date: December 1-3, 2024</p>
+                        <p>Description: An exciting sports event with various competitions and activities for students.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- New Section: Career Services -->
+            <section class="career-services">
+                <h2>Career Services</h2>
+                <p>We offer extensive career support services including internships, job placements, and career counseling to help students achieve their professional goals.</p>
+                <a href="career-services.html" class="btn">Explore Career Services</a>
+            </section>
+        
+           
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 NIT Jalandhar. All rights reserved.</p>
+        </footer>
+            
+
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="static\images\Logo_of_NIT_Jalandhar.png" style="width: 40px; height: 40px;" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">NITJ Chatbot</h4>
+                    <p class="chatbox__description--header">  </p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Ask a question...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = '{{ request.script_root }}';
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
